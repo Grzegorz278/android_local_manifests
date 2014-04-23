@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+ <remote  name="v-superuser"
+           fetch="https://github.com/v-superuser/" />
+
+<!-- Useless Stuff -->
+<remove-project name="AndroidArmv6/android_frameworks_av" />
+
 <!-- Device Tree, Kernel and Vendor for kylexx -->
 <project path="device/samsung/kylexx" name="v-superuser/android_device_samsung_kylexx" revision="cm-11.0" />
 <project path="kernel/samsung/kylexx" name="v-superuser/android_kernel_samsung_kylexx" revision="master"/>
 <project path="vendor/samsung/kylexx" name="v-superuser/android_vendor_samsung_kylexx" revision="cm-11.0" />
 
-
 <!-- WLAN Drivers -->
 <project path="hardware/atheros/wlan" name="legaCyMod/android_hardware_atheros_wlan" revision="cm-11.0" />
+
+<!-- Extra stuff required for building -->
+<project path="external/srec" name="CyanogenMod/android_external_srec" revision="cm-11.0" />
+<project path="frameworks/av" name="legaCyMod/android_frameworks_av" revision="cm-11.0" />
+
 </manifest>
