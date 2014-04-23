@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <!-- Device Tree, Kernel and Vendor for kylexx -->
-<project path="device/samsung/kylexx" name="v-superuser/android_device_samsung_kylexx" revision="master" />
+<project path="device/samsung/kylexx" name="v-superuser/android_device_samsung_kylexx" revision="cm-11.0" />
 <project path="kernel/samsung/kylexx" name="v-superuser/android_kernel_samsung_kylexx" revision="master"/>
-<project path="vendor/samsung/kylexx" name="v-superuser/android_vendor_samsung_kylexx" revision="master" />
+<project path="vendor/samsung/kylexx" name="v-superuser/android_vendor_samsung_kylexx" revision="cm-11.0" />
 
 
-<!-- WLAN Drivers --!>
+<!-- WLAN Drivers -->
 <project path="hardware/atheros/wlan" name="legaCyMod/android_hardware_atheros_wlan" revision="cm-11.0" />
 </manifest>
