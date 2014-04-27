@@ -2,20 +2,26 @@
 <manifest>
  <remote  name="v-superuser"
            fetch="https://github.com/v-superuser/" />
+           
+  <remote  name="legaCyMod"
+           fetch="https://github.com/legaCyMod" />
+           
+    <remote  name="CyanogenMod"
+           fetch="https://github.com/CyanogenMod" />
 
 <!-- Useless Stuff -->
 <remove-project name="AndroidArmv6/android_frameworks_av" />
 
 <!-- Device Tree, Kernel and Vendor for kylexx -->
-<project path="device/samsung/kylexx" name="v-superuser/android_device_samsung_kylexx" revision="cm-11.0" />
-<project path="kernel/samsung/kylexx" name="v-superuser/android_kernel_samsung_kylexx" revision="master"/>
-<project path="vendor/samsung/kylexx" name="v-superuser/android_vendor_samsung_kylexx" revision="cm-11.0" />
+<project path="device/samsung/kylexx" name="v-superuser/android_device_samsung_kylexx" remote ="v-superuser" revision="cm-11.0" />
+<project path="kernel/samsung/kylexx" name="v-superuser/android_kernel_samsung_kylexx" remote ="v-superuser" revision="master"/>
+<project path="vendor/samsung/kylexx" name="v-superuser/android_vendor_samsung_kylexx" remote ="v-superuser" revision="cm-11.0" />
 
 <!-- WLAN Drivers -->
-<project path="hardware/atheros/wlan" name="legaCyMod/android_hardware_atheros_wlan" revision="cm-11.0" />
+<project path="hardware/atheros/wlan" name="legaCyMod/android_hardware_atheros_wlan" remote ="legaCyMod" revision="cm-11.0" />
 
 <!-- Extra stuff required for building -->
-<project path="external/srec" name="CyanogenMod/android_external_srec" revision="cm-11.0" />
-<project path="frameworks/av" name="legaCyMod/android_frameworks_av" revision="cm-11.0" />
+<project path="external/srec" name="CyanogenMod/android_external_srec" remote ="CyanogenMod"  revision="cm-11.0" />
+<project path="frameworks/av" name="legaCyMod/android_frameworks_av"  remote ="legaCyMod" revision="cm-11.0" />
 
 </manifest>
